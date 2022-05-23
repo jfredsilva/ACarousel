@@ -135,10 +135,7 @@ extension ACarouselViewModel {
     }
     
     var offsetAnimation: Animation? {
-        guard isWrap else {
-            return .spring()
-        }
-        return isAnimatedOffset ? .spring() : .none
+        .none
     }
     
     var itemWidth: CGFloat {
